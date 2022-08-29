@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">jetpackNavigation</string>
+    <string name="title">Laboratorio 7</string>
+    <string name="goToNewAccount">¿Nuevo Usuario? ¡Crea tu cuenta aquí!</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="newAccount">Nueva cuenta</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="createCount">Crear cuenta</string>
+    <string name="goodMorning">¡Buenos días!</string>
+    <string name="profileUpdate">Actualizar perfil</string>
+    <string name="profileTitle">Mi perfil</string>
+    <string name="update">Actualizar</string>
+    <string name="inputEmail">Ingresa tu correo</string>
+    <string name="errorEmail">No existe el correo ingresado</string>
+</resources>

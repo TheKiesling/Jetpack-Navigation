@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <TextView
+        android:id="@+id/textView_homeFragment_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goodMorning"
+        android:textSize="@dimen/textHeaderOne"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/text_homeFragment_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/text_homeFragment_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="@dimen/distanceOne"
+        android:layout_marginEnd="@dimen/distanceOne"
+        android:layout_marginTop="@dimen/distanceTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_homeFragment_welcome"
+        app:layout_constraintBottom_toTopOf="@id/button_homeFragment_update"
+        />
+
+    <Button
+        android:id="@+id/button_homeFragment_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceCenter"
+        android:layout_marginEnd="@dimen/distanceCenter"
+        android:layout_marginTop="@dimen/distanceTwo"
+        android:backgroundTint="@color/orange"
+        android:text="@string/profileUpdate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_homeFragment_message" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

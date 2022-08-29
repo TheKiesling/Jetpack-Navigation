@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    >
+
+    <TextView
+        android:id="@+id/textView_loginFragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="@dimen/textHeaderOne"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/editText_loginFragment_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editText_loginFragment_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceOne"
+        android:layout_marginEnd="@dimen/distanceOne"
+        android:layout_marginTop="@dimen/distanceOne"
+        app:layout_constraintStart_toStartOf="@id/textView_loginFragment_title"
+        app:layout_constraintTop_toBottomOf="@id/textView_loginFragment_title"
+        app:layout_constraintBottom_toTopOf="@id/button_loginFragment_goToNewAccount"
+        android:hint="@string/inputEmail"
+        android:textColorHint="@color/material_dynamic_neutral70"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_loginFragment_goToNewAccount"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:padding="@dimen/zero"
+        android:layout_marginStart="@dimen/distanceOne"
+        android:layout_marginEnd="@dimen/distanceOne"
+        android:text="@string/goToNewAccount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/sky_blue_dark"
+        android:textSize="@dimen/textHeaderFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_loginFragment_email"
+        app:layout_constraintBottom_toTopOf="@id/button_loginFragment_login"/>
+
+    <Button
+        android:id="@+id/button_loginFragment_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distanceOne"
+        android:layout_marginEnd="@dimen/distanceOne"
+        android:backgroundTint="@color/orange"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_loginFragment_goToNewAccount" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
